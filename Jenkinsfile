@@ -3,9 +3,10 @@ pipeline {
 
     stages {
 
-        stage('Clone Repository') {
+        stage('Checkout Code') {
             steps {
-                git 'https://github.com/sivareddy78936/graphic-design-tool-final-modules.git'
+                git branch: 'main',
+                url: 'https://github.com/sivareddy78936/graphic-design-tool-final-modules.git'
             }
         }
 
